@@ -1,5 +1,5 @@
-import { useAppContext } from '@intenseye/context';
-import { useSearchGithubRepositories } from '@intenseye/services';
+import { useAppContext } from '@fetask/context';
+import { useSearchGithubRepositories } from '@fetask/services';
 import { useSelector } from '@xstate/react';
 import { useEffect } from 'react';
 

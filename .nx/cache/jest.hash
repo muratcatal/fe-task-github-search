@@ -1,0 +1,128 @@
+{
+  "903567952279484943": {
+    "test": {
+      "command": "jest",
+      "options": {
+        "cwd": "apps/frontend-task"
+      },
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "jest"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}\\coverage\\apps\\frontend-task"
+      ]
+    }
+  },
+  "3903645802579611147": {
+    "test": {
+      "command": "jest",
+      "options": {
+        "cwd": "libs/context"
+      },
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "jest"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}\\coverage\\libs\\context"
+      ]
+    }
+  },
+  "13453020388448824958": {
+    "test": {
+      "command": "jest",
+      "options": {
+        "cwd": "libs/fe-task-constants"
+      },
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "jest"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}\\coverage\\libs\\fe-task-constants"
+      ]
+    }
+  },
+  "16764903816993082911": {
+    "test": {
+      "command": "jest",
+      "options": {
+        "cwd": "libs/fe-task-ui"
+      },
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "jest"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}\\coverage\\libs\\fe-task-ui"
+      ]
+    }
+  },
+  "4761743409640859146": {
+    "test": {
+      "command": "jest",
+      "options": {
+        "cwd": "libs/services"
+      },
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "jest"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}\\coverage\\libs\\services"
+      ]
+    }
+  },
+  "17046507954180351628": {
+    "test": {
+      "command": "jest",
+      "options": {
+        "cwd": "libs/states"
+      },
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "jest"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}\\coverage\\libs\\states"
+      ]
+    }
+  }
+}

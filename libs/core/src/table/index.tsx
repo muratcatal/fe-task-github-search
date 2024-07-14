@@ -1,4 +1,4 @@
-import { ORDER_TYPES } from '@intenseye/fe-task-constants';
+import { ORDER_TYPES } from '@fetask/fe-task-constants';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { Button, Link } from '@mui/joy';
 import MUITable from '@mui/joy/Table';

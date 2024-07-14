@@ -1,4 +1,4 @@
-import { useAppContext } from '@intenseye/context';
+import { useAppContext } from '@fetask/context';
 import SettingsIcon from '@mui/icons-material/Settings';
 import {
   Button,

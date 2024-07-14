@@ -1,4 +1,4 @@
-import { searchActor } from '@intenseye/states';
+import { searchActor } from '@fetask/states';
 import React, { createContext, useContext } from 'react';
 
 type AppProviderProps = {

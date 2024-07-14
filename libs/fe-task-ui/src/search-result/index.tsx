@@ -1,9 +1,9 @@
-import { useAppContext } from '@intenseye/context';
-import { Table } from '@intenseye/core';
+import { useAppContext } from '@fetask/context';
+import { Table } from '@fetask/core';
 import {
   ORDER_TYPES,
   REPOSITORY_TABLE_COLUMNS,
-} from '@intenseye/fe-task-constants';
+} from '@fetask/fe-task-constants';
 import { useSelector } from '@xstate/react';
 import { format } from 'date-fns';
 import { useCallback } from 'react';

@@ -1,6 +1,6 @@
-import { useAppContext } from '@intenseye/context';
-import { RadioButtonGroup, SearchInput } from '@intenseye/core';
-import { LANGUAGES, SEARCH_LANGUAGE_TYPES } from '@intenseye/fe-task-constants';
+import { useAppContext } from '@fetask/context';
+import { RadioButtonGroup, SearchInput } from '@fetask/core';
+import { LANGUAGES, SEARCH_LANGUAGE_TYPES } from '@fetask/fe-task-constants';
 import { useSelector } from '@xstate/react';
 import { useCallback } from 'react';
 

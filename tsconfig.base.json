@@ -15,12 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@intenseye/context": ["libs/context/src/index.ts"],
-      "@intenseye/core": ["libs/core/src/index.ts"],
-      "@intenseye/fe-task-constants": ["libs/fe-task-constants/src/index.ts"],
-      "@intenseye/fe-task-ui": ["libs/fe-task-ui/src/index.ts"],
-      "@intenseye/services": ["libs/services/src/index.ts"],
-      "@intenseye/states": ["libs/states/src/index.ts"]
+      "@fetask/context": ["libs/context/src/index.ts"],
+      "@fetask/core": ["libs/core/src/index.ts"],
+      "@fetask/fe-task-constants": ["libs/fe-task-constants/src/index.ts"],
+      "@fetask/fe-task-ui": ["libs/fe-task-ui/src/index.ts"],
+      "@fetask/services": ["libs/services/src/index.ts"],
+      "@fetask/states": ["libs/states/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

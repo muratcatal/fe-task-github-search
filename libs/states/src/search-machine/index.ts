@@ -2,8 +2,8 @@ import {
   ORDER_TYPES,
   REPOSITORY_TABLE_COLUMNS,
   SEARCH_LANGUAGE_TYPES,
-} from '@intenseye/fe-task-constants';
-import { RepositoryItem, RepositoryResultResult } from '@intenseye/services';
+} from '@fetask/fe-task-constants';
+import { RepositoryItem, RepositoryResultResult } from '@fetask/services';
 import { assign, createActor, setup } from 'xstate';
 import { LOCAL_STORAGE_KEY_SEARCH_ACTOR } from './constants';
 

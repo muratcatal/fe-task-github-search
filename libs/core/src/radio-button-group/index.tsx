@@ -1,4 +1,4 @@
-import { RadioButtonValue } from '@intenseye/fe-task-constants';
+import { RadioButtonValue } from '@fetask/fe-task-constants';
 import { Radio, RadioGroup } from '@mui/joy';
 import { RadioButtonWrapper } from './styled';
 

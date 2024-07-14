@@ -1,0 +1,657 @@
+{
+  "version": "6.0",
+  "nxVersion": "18.1.2",
+  "deps": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.14",
+    "@mui/joy": "^5.0.0-beta.32",
+    "@mui/material": "^5.15.14",
+    "@statelyai/inspect": "^0.2.5",
+    "@xstate/react": "^4.1.0",
+    "axios": "^1.6.8",
+    "date-fns": "^3.6.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-query": "^3.39.3",
+    "tslib": "^2.3.0",
+    "use-debounce": "^10.0.0",
+    "xstate": "^5.9.1",
+    "@babel/core": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
+    "@emotion/babel-plugin": "11.11.0",
+    "@nx/cypress": "18.1.2",
+    "@nx/eslint": "18.1.2",
+    "@nx/eslint-plugin": "18.1.2",
+    "@nx/jest": "18.1.2",
+    "@nx/js": "18.1.2",
+    "@nx/react": "18.1.2",
+    "@nx/web": "18.1.2",
+    "@nx/webpack": "18.1.2",
+    "@nx/workspace": "18.1.2",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
+    "@svgr/webpack": "^8.0.1",
+    "@swc-node/register": "~1.8.0",
+    "@swc/cli": "~0.1.62",
+    "@swc/core": "~1.3.85",
+    "@swc/helpers": "~0.5.2",
+    "@testing-library/react": "14.0.0",
+    "@types/jest": "^29.4.0",
+    "@types/node": "18.16.9",
+    "@types/react": "18.2.33",
+    "@types/react-dom": "18.2.14",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "babel-jest": "^29.4.1",
+    "cypress": "^13.6.6",
+    "eslint": "~8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-cypress": "^2.13.4",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "jest": "^29.4.1",
+    "jest-environment-jsdom": "^29.4.1",
+    "nx": "18.1.2",
+    "prettier": "^2.6.2",
+    "react-refresh": "^0.10.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "10.9.1",
+    "typescript": "~5.3.2",
+    "url-loader": "^4.1.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "pathMappings": {
+    "@fetask/context": [
+      "libs/context/src/index.ts"
+    ],
+    "@fetask/core": [
+      "libs/core/src/index.ts"
+    ],
+    "@fetask/fe-task-constants": [
+      "libs/fe-task-constants/src/index.ts"
+    ],
+    "@fetask/fe-task-ui": [
+      "libs/fe-task-ui/src/index.ts"
+    ],
+    "@fetask/services": [
+      "libs/services/src/index.ts"
+    ],
+    "@fetask/states": [
+      "libs/states/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/webpack/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "name": "@nx/cypress/plugin",
+      "options": {
+        "targetName": "e2e",
+        "componentTestingTargetName": "component-test"
+      }
+    },
+    {
+      "name": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".gitignore",
+        "hash": "13404745306227114823"
+      },
+      {
+        "file": "yarn.lock",
+        "hash": "9049658762707845820"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "package.json",
+        "hash": "16614247733968417107"
+      },
+      {
+        "file": "README.md",
+        "hash": "3788188060388342255"
+      },
+      {
+        "file": "image.png",
+        "hash": "17968711104764134601"
+      },
+      {
+        "file": "nx.json",
+        "hash": "13235371403079485254"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "7025482829098020428"
+      },
+      {
+        "file": "dist/.DS_Store",
+        "hash": "17031389523020257837"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "3494843969422251966"
+      },
+      {
+        "file": "structure.png",
+        "hash": "17968711104764134601"
+      }
+    ],
+    "projectFileMap": {
+      "fe-task-constants": [
+        {
+          "file": "libs/fe-task-constants/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/fe-task-constants/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "libs/fe-task-constants/README.md",
+          "hash": "550058319149159827"
+        },
+        {
+          "file": "libs/fe-task-constants/jest.config.ts",
+          "hash": "3136695396357311463"
+        },
+        {
+          "file": "libs/fe-task-constants/project.json",
+          "hash": "14220893055513842880"
+        },
+        {
+          "file": "libs/fe-task-constants/src/index.ts",
+          "hash": "14489331243966321892"
+        },
+        {
+          "file": "libs/fe-task-constants/tsconfig.json",
+          "hash": "12937361759397702261"
+        },
+        {
+          "file": "libs/fe-task-constants/tsconfig.lib.json",
+          "hash": "15147195313780277677"
+        },
+        {
+          "file": "libs/fe-task-constants/tsconfig.spec.json",
+          "hash": "6514620907549802163"
+        }
+      ],
+      "frontend-task-e2e": [
+        {
+          "file": "apps/frontend-task-e2e/.eslintrc.json",
+          "hash": "14060216369337943343"
+        },
+        {
+          "file": "apps/frontend-task-e2e/cypress.config.ts",
+          "hash": "9631930334492281866",
+          "deps": [
+            "npm:@nx/cypress",
+            "npm:cypress"
+          ]
+        },
+        {
+          "file": "apps/frontend-task-e2e/project.json",
+          "hash": "11493671455722649338"
+        },
+        {
+          "file": "apps/frontend-task-e2e/src/e2e/app.cy.ts",
+          "hash": "817116348290734820"
+        },
+        {
+          "file": "apps/frontend-task-e2e/src/fixtures/example.json",
+          "hash": "11785586596216172004"
+        },
+        {
+          "file": "apps/frontend-task-e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "apps/frontend-task-e2e/src/support/commands.ts",
+          "hash": "5397443931564808659"
+        },
+        {
+          "file": "apps/frontend-task-e2e/src/support/e2e.ts",
+          "hash": "1054106023200826784"
+        },
+        {
+          "file": "apps/frontend-task-e2e/tsconfig.json",
+          "hash": "10740392072068377465"
+        }
+      ],
+      "states": [
+        {
+          "file": "libs/states/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/states/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "libs/states/README.md",
+          "hash": "8046875365739204620"
+        },
+        {
+          "file": "libs/states/jest.config.ts",
+          "hash": "18131741107069380593"
+        },
+        {
+          "file": "libs/states/project.json",
+          "hash": "8781887577756307373"
+        },
+        {
+          "file": "libs/states/src/index.ts",
+          "hash": "8031257414306458053"
+        },
+        {
+          "file": "libs/states/src/search-machine/constants.ts",
+          "hash": "5395065596775254130"
+        },
+        {
+          "file": "libs/states/src/search-machine/index.ts",
+          "hash": "13320593552853999470",
+          "deps": [
+            "fe-task-constants",
+            "services",
+            "npm:xstate"
+          ]
+        },
+        {
+          "file": "libs/states/tsconfig.json",
+          "hash": "12937361759397702261"
+        },
+        {
+          "file": "libs/states/tsconfig.lib.json",
+          "hash": "15147195313780277677"
+        },
+        {
+          "file": "libs/states/tsconfig.spec.json",
+          "hash": "6514620907549802163"
+        }
+      ],
+      "frontend-task": [
+        {
+          "file": "apps/frontend-task/.babelrc",
+          "hash": "3309448101048490971"
+        },
+        {
+          "file": "apps/frontend-task/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "apps/frontend-task/jest.config.ts",
+          "hash": "6702509326167887167"
+        },
+        {
+          "file": "apps/frontend-task/project.json",
+          "hash": "11903314263526718003"
+        },
+        {
+          "file": "apps/frontend-task/src/app/app.spec.tsx",
+          "hash": "4797195122934006414",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/frontend-task/src/app/app.tsx",
+          "hash": "14349518344434464264",
+          "deps": [
+            "context",
+            "core",
+            "fe-task-ui",
+            "npm:@mui/joy"
+          ]
+        },
+        {
+          "file": "apps/frontend-task/src/app/styled.ts",
+          "hash": "16848457411900771397",
+          "deps": [
+            "npm:@emotion/styled"
+          ]
+        },
+        {
+          "file": "apps/frontend-task/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/frontend-task/src/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/frontend-task/src/index.html",
+          "hash": "2040229084377818047"
+        },
+        {
+          "file": "apps/frontend-task/src/main.tsx",
+          "hash": "4731961929376199421",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/frontend-task/tsconfig.app.json",
+          "hash": "15147195313780277677"
+        },
+        {
+          "file": "apps/frontend-task/tsconfig.json",
+          "hash": "15529987419283619546"
+        },
+        {
+          "file": "apps/frontend-task/tsconfig.spec.json",
+          "hash": "11378287594513225419"
+        },
+        {
+          "file": "apps/frontend-task/webpack.config.js",
+          "hash": "5620938283229314485",
+          "deps": [
+            "npm:@nx/webpack",
+            "npm:@nx/react",
+            "npm:path"
+          ]
+        }
+      ],
+      "fe-task-ui": [
+        {
+          "file": "libs/fe-task-ui/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/fe-task-ui/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "libs/fe-task-ui/README.md",
+          "hash": "6445616923655888104"
+        },
+        {
+          "file": "libs/fe-task-ui/jest.config.ts",
+          "hash": "2806849956437498030"
+        },
+        {
+          "file": "libs/fe-task-ui/project.json",
+          "hash": "13359142647255888636"
+        },
+        {
+          "file": "libs/fe-task-ui/src/github-api-key-settings/index.tsx",
+          "hash": "3138141639381847240",
+          "deps": [
+            "context",
+            "npm:@mui/icons-material",
+            "npm:@mui/joy",
+            "npm:@xstate/react",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/fe-task-ui/src/hooks/use-search/index.ts",
+          "hash": "11346436815784161805",
+          "deps": [
+            "context",
+            "services",
+            "npm:@xstate/react",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/fe-task-ui/src/index.ts",
+          "hash": "1989306993999980599"
+        },
+        {
+          "file": "libs/fe-task-ui/src/search-panel/index.tsx",
+          "hash": "2583139332204578205",
+          "deps": [
+            "context",
+            "core",
+            "fe-task-constants",
+            "npm:@xstate/react",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/fe-task-ui/src/search-panel/styled.ts",
+          "hash": "10692982653764384528",
+          "deps": [
+            "npm:@emotion/styled"
+          ]
+        },
+        {
+          "file": "libs/fe-task-ui/src/search-result/index.tsx",
+          "hash": "6551634744146914263",
+          "deps": [
+            "context",
+            "core",
+            "fe-task-constants",
+            "npm:@xstate/react",
+            "npm:date-fns",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/fe-task-ui/src/search-result/loading-skeleton/index.tsx",
+          "hash": "15161054338536116093",
+          "deps": [
+            "npm:@mui/joy"
+          ]
+        },
+        {
+          "file": "libs/fe-task-ui/tsconfig.json",
+          "hash": "12937361759397702261"
+        },
+        {
+          "file": "libs/fe-task-ui/tsconfig.lib.json",
+          "hash": "15147195313780277677"
+        },
+        {
+          "file": "libs/fe-task-ui/tsconfig.spec.json",
+          "hash": "6514620907549802163"
+        }
+      ],
+      "services": [
+        {
+          "file": "libs/services/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/services/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "libs/services/README.md",
+          "hash": "15122122703057692814"
+        },
+        {
+          "file": "libs/services/jest.config.ts",
+          "hash": "6358512211075140841"
+        },
+        {
+          "file": "libs/services/project.json",
+          "hash": "17789255900915515970"
+        },
+        {
+          "file": "libs/services/src/github/keys.ts",
+          "hash": "6943098986431628819"
+        },
+        {
+          "file": "libs/services/src/github/repositories/index.ts",
+          "hash": "13992170526810104366"
+        },
+        {
+          "file": "libs/services/src/github/repositories/search/index.ts",
+          "hash": "9088322316525575730",
+          "deps": [
+            "fe-task-constants",
+            "npm:axios",
+            "npm:react-query"
+          ]
+        },
+        {
+          "file": "libs/services/src/github/repositories/search/types.ts",
+          "hash": "8500400664320451540"
+        },
+        {
+          "file": "libs/services/src/index.ts",
+          "hash": "8900462380009240876"
+        },
+        {
+          "file": "libs/services/tsconfig.json",
+          "hash": "12937361759397702261"
+        },
+        {
+          "file": "libs/services/tsconfig.lib.json",
+          "hash": "15147195313780277677"
+        },
+        {
+          "file": "libs/services/tsconfig.spec.json",
+          "hash": "6514620907549802163"
+        }
+      ],
+      "core": [
+        {
+          "file": "libs/core/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/core/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "libs/core/README.md",
+          "hash": "862743182427189852"
+        },
+        {
+          "file": "libs/core/project.json",
+          "hash": "8215491323991500792"
+        },
+        {
+          "file": "libs/core/src/index.ts",
+          "hash": "14370590979146152691"
+        },
+        {
+          "file": "libs/core/src/radio-button-group/index.tsx",
+          "hash": "3393648864203526414",
+          "deps": [
+            "fe-task-constants",
+            "npm:@mui/joy"
+          ]
+        },
+        {
+          "file": "libs/core/src/radio-button-group/styled.ts",
+          "hash": "9342604469110171149",
+          "deps": [
+            "npm:@emotion/styled",
+            "npm:@mui/joy"
+          ]
+        },
+        {
+          "file": "libs/core/src/search-input/index.tsx",
+          "hash": "6476504156632808495",
+          "deps": [
+            "npm:@mui/joy",
+            "npm:use-debounce"
+          ]
+        },
+        {
+          "file": "libs/core/src/service-client/index.tsx",
+          "hash": "9759548207614549104",
+          "deps": [
+            "npm:react-query"
+          ]
+        },
+        {
+          "file": "libs/core/src/table/index.tsx",
+          "hash": "16264688690514071094",
+          "deps": [
+            "fe-task-constants",
+            "npm:@mui/icons-material",
+            "npm:@mui/joy",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/core/src/table/styled.ts",
+          "hash": "6087152868086868634",
+          "deps": [
+            "npm:@emotion/styled"
+          ]
+        },
+        {
+          "file": "libs/core/tsconfig.json",
+          "hash": "14088618039610991405"
+        },
+        {
+          "file": "libs/core/tsconfig.lib.json",
+          "hash": "15147195313780277677"
+        }
+      ],
+      "context": [
+        {
+          "file": "libs/context/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/context/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "libs/context/README.md",
+          "hash": "9079420328331477316"
+        },
+        {
+          "file": "libs/context/jest.config.ts",
+          "hash": "1164329555805854737"
+        },
+        {
+          "file": "libs/context/project.json",
+          "hash": "1402141033870340993"
+        },
+        {
+          "file": "libs/context/src/app-context/index.tsx",
+          "hash": "12816102716314433255",
+          "deps": [
+            "states",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/context/src/index.ts",
+          "hash": "14378235291680259455"
+        },
+        {
+          "file": "libs/context/tsconfig.json",
+          "hash": "12937361759397702261"
+        },
+        {
+          "file": "libs/context/tsconfig.lib.json",
+          "hash": "15147195313780277677"
+        },
+        {
+          "file": "libs/context/tsconfig.spec.json",
+          "hash": "6514620907549802163"
+        }
+      ]
+    }
+  }
+}

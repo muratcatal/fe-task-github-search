@@ -1,4 +1,4 @@
-import { ORDER_TYPES } from '@intenseye/fe-task-constants';
+import { ORDER_TYPES } from '@fetask/fe-task-constants';
 import axios from 'axios';
 import { useQuery } from 'react-query';
 import { QUERY_KEYS_SEARCH_GITHUB_REPOSITORIES } from '../../keys';
