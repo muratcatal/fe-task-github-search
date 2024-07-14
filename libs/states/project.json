@@ -1,0 +1,9 @@
+{
+  "name": "states",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/states/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project states --web",
+  "targets": {}
+}
